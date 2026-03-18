@@ -1,0 +1,16 @@
+- name: Message1
+  ansible.builtin.debug:
+    msg: "Message-1"
+
+- name: Set variable dynamically
+  ansible.builtin.set_fact:
+    os: Debian
+
+- name: Message2
+  ansible.builtin.debug:
+    msg: "Message-2"
+
+- name: Message3
+  ansible.builtin.debug:
+    msg: "Message-3"
+

@@ -1,0 +1,5 @@
+- name: Include vs Import
+  hosts: local
+  connection: local
+  roles:
+    - include-import
