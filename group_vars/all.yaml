@@ -1,13 +1,13 @@
 
 ansible_user: ec2-user
 ansible_password: DevOps321
-MONGODB_HOST: mongodb-dev.kajjam.online
-CATALOGUE_HOST: catalogue-dev.kajjam.online
-REDIS_HOST: redis-dev.kajjam.online
-USER_HOST: user-dev.kajjam.online
-CART_HOST: cart-dev.kajjam.online
-MYSQL_HOST: mysql-dev.kajjam.online
-SHIPPING_HOST: shipping-dev.kajjam.online
-RABBITMQ_HOST: rabbitmq-dev.kajjam.online
-PAYMENT_HOST: payment-dev.kajjam.online
-os: redhat
+MONGODB_HOST: mongodb-{{ env }}.kajjam.online
+REDIS_HOST: redis-{{ env }}.kajjam.online
+MYSQL_HOST: mysql-{{ env }}.kajjam.online
+RABBITMQ_HOST: rabbitmq-{{ env }}.kajjam.online
+CATALOGUE_HOST: catalogue.backend-alb-{{ env }}.kajjam.online
+USER_HOST: user.backend-alb-{{ env }}.kajjam.online
+CART_HOST: cart.backend-alb-{{ env }}.kajjam.online
+SHIPPING_HOST: shipping.backend-alb-{{ env }}.kajjam.online
+PAYMENT_HOST: payment.backend-alb-{{ env }}.kajjam.online
+app_version: v3
